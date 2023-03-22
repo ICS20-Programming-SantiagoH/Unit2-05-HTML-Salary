@@ -30,56 +30,50 @@
         <table>
           <tr>
             <th>
-              <img src="./images/tax-time.jpg" alt="Triangle" width="75%" height="auto"/>
-            </th>
-            <th>
-              <h2>Formula</h2>
-              <h3>A = 1/2 × b × h</h3>
-            </th>
-          </tr>
-        </table>
+              <img src="./images/tax-time.jpg" alt="Tax" width="75%" height="auto"/>
+              <h5>Enter employment information:</h5>
         <!-- Simple Textfield -->
         <form action="#">
-          <p>Base</p>
+          Hours worked:
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="base-of-triangle"
+              id="hours"
             />
-            <label class="mdl-textfield__label" for="base-of-triangle">Base...</label>
+            <label class="mdl-textfield__label" for="hours">Hours...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-				
+    
+				<form action="#">
         <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Height</p>
+          Hourly rate:
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-triangle"
+              id="rate"
             />
-            <label class="mdl-textfield__label" for="height-of-triangle">Height...</label>
+            <label class="mdl-textfield__label" for="rate">Rate...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
+          
         </form>
 				
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()"
+          type="Submit" onclick="calculate()"
         >
           Calculate
         </button>
         <br />
         <p>
-          <div id="answers">
-            <div id="area"></div>
-          </div>
+        <div id="takeHomeSalary"></div>
+        <div id="taxPaid"></div>
         </p>
       </main>
     </div>
