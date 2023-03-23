@@ -6,7 +6,7 @@
 
 "use strict";
 /**
- * This function calculates the area of the triangle.
+ * This function calculates the amount of money you receive after taxes.
  */
 function calculate() {  
   
@@ -20,6 +20,6 @@ function calculate() {
   let takeHomeSalary = totalPay - tax;
   
   // Data being shown
-  document.getElementById('takeHomeSalary').innerHTML = 'Your take home salary is ' + takeHomeSalary.toFixed(2)
-  document.getElementById('taxPaid').innerHTML = 'Your tax owed is ' + tax.toFixed(2)
+  document.getElementById('takeHomeSalary').innerHTML = 'After taxes, your take home salary is $' + takeHomeSalary.toFixed(2)
+  document.getElementById('taxPaid').innerHTML = 'Your tax owed is $' + tax.toFixed(2)
 }
